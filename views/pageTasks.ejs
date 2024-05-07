@@ -1,0 +1,16 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1>My tasks <&= message %></h1>
+                <ul>
+                <% tasks.forEach((t)=>{%>
+                    <li><%= t.id%><%= t.text%></li>
+                <%})%>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
